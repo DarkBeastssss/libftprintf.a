@@ -6,7 +6,7 @@
 #    By: amecani <amecani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 10:54:25 by amecani           #+#    #+#              #
-#    Updated: 2023/11/24 15:42:27 by amecani          ###   ########.fr        #
+#    Updated: 2023/12/07 18:19:45 by amecani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ OBJ+ = $(C_FILES:.c=.o) $(BONUS_FILES:.c=.o)
 # LIBFT_D = libft/
 DEBUGGER = debugger/
 NAME = libftprintf.a
-H_FILE = ft_printf.h libft/libft.h
+H_FILE = ft_printf.h
 C_FILES = ft_printf.c MC_Dispenser.c fck_norm.c
 .PHONY: clean fclean re all
 all: $(NAME)

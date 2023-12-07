@@ -6,7 +6,7 @@
 /*   By: amecani <amecani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 10:44:23 by amecani           #+#    #+#             */
-/*   Updated: 2023/11/30 17:04:31 by amecani          ###   ########.fr       */
+/*   Updated: 2023/12/07 15:34:49 by amecani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 int	specifier_finder(va_list args, const char skiaa)
 {
-	// so basically  YEEEET NEWBORNS
 	if (skiaa == 'c')
 		return (ft_putchar(va_arg(args, int)));
 	if (skiaa == 's')
@@ -48,7 +47,7 @@ int	ft_printf(const char *intput, ...)
 		if (intput[i] == '%' && ft_strchr("cpdsiuxX%", intput[i + 1]))
 			i++;
 		else
-			sa += ft_putchar(intput[i]); // here have to do it so I return -99999; or *(-1);
+			sa += ft_putchar(intput[i]);
 		if (sa < 0)
 			return (-1);
 		i++;
